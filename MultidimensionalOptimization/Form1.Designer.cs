@@ -40,6 +40,8 @@
             this.DescentOfTheSecondOrder = new System.Windows.Forms.Button();
             this.FletcherReevesMethod = new System.Windows.Forms.Button();
             this.ModifiedNewtonsMethod = new System.Windows.Forms.Button();
+            this.Iterations = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -153,11 +155,31 @@
             this.ModifiedNewtonsMethod.UseVisualStyleBackColor = true;
             this.ModifiedNewtonsMethod.Click += new System.EventHandler(this.ModifiedNewtonsMethod_Click);
             // 
+            // Iterations
+            // 
+            this.Iterations.AutoSize = true;
+            this.Iterations.Location = new System.Drawing.Point(314, 138);
+            this.Iterations.Name = "Iterations";
+            this.Iterations.Size = new System.Drawing.Size(28, 15);
+            this.Iterations.TabIndex = 12;
+            this.Iterations.Text = "0.00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(244, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 15);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Iterations -";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 328);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Iterations);
             this.Controls.Add(this.ModifiedNewtonsMethod);
             this.Controls.Add(this.FletcherReevesMethod);
             this.Controls.Add(this.DescentOfTheSecondOrder);
@@ -191,5 +213,7 @@
         private Button DescentOfTheSecondOrder;
         private Button FletcherReevesMethod;
         private Button ModifiedNewtonsMethod;
+        private Label Iterations;
+        private Label label1;
     }
 }

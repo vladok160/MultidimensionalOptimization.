@@ -21,6 +21,10 @@ namespace MultidimensionalOptimization_
             prevValue = double.MaxValue; // предыдущее значение функции
             Method();
         }
+        public int GetCountOfIterations()
+        {
+            return count;
+        }
         public double MethodForX1()
         {
             return x[0];
@@ -53,6 +57,7 @@ namespace MultidimensionalOptimization_
                 x[1] -= alpha * gradient[1]; // обновляем значение x2
 
                 prevValue = currentValue;
+                count++;
             }
         }
         double PartialDerivative(double[] x, int index)

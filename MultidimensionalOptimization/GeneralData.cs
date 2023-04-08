@@ -11,12 +11,14 @@ namespace MultidimensionalOptimization_
         protected double x1, x2, epsilon;
         protected double alpha; // начальный шаг
         protected double[] x;
+        protected int count;
         public GeneralData()
         {
             //эт все крч начальные значения x (берется из вашего варика)
             x1 = -3.0;
             x2 = -3.0;
             x = new double[] { -3, -3 };
+            count = 0;
         }
         //для методов без массива
         protected double f(double x1, double x2)

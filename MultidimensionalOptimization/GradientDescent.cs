@@ -18,6 +18,10 @@ namespace MultidimensionalOptimization_
             beta = 0.5;
             Method();
         }
+        public int GetCountOfIterations()
+        {
+            return count;
+        }
         public double MethodForF() 
         {
             double AnswF = f(x1, x2);
@@ -56,6 +60,7 @@ namespace MultidimensionalOptimization_
                 fx = fxnew;
                 dfx1 = dfdx1(x1, x2);
                 dfx2 = dfdx2(x1, x2);
+                count++;
             }
         }
         double dfdx2(double x1, double x2)

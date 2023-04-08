@@ -11,5 +11,6 @@ namespace MultidimensionalOptimization_
         public double MethodForX1();
         public double MethodForX2();
         public double MethodForF();
+        public int GetCountOfIterations();
     }
 }

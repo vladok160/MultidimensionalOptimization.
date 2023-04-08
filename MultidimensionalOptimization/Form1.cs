@@ -15,6 +15,7 @@ namespace MultidimensionalOptimization_
             X1.Text = Convert.ToString(gd.MethodForX1());
             X2.Text = Convert.ToString(gd.MethodForX2());
             F.Text = Convert.ToString(gd.MethodForF());
+            Iterations.Text = Convert.ToString(gd.GetCountOfIterations());
         }
 
         private void FastestGradient_Click(object sender, EventArgs e)
@@ -23,6 +24,7 @@ namespace MultidimensionalOptimization_
             X1.Text = Convert.ToString(fastestGradient.MethodForX1());
             X2.Text = Convert.ToString(fastestGradient.MethodForX2());
             F.Text = Convert.ToString(fastestGradient.MethodForF());
+            Iterations.Text = Convert.ToString(fastestGradient.GetCountOfIterations());
         }
 
         private void DescentOfTheSecondOrder_Click(object sender, EventArgs e)
@@ -31,6 +33,7 @@ namespace MultidimensionalOptimization_
             X1.Text = Convert.ToString(DSO.MethodForX1());
             X2.Text = Convert.ToString(DSO.MethodForX2());
             F.Text = Convert.ToString(DSO.MethodForF());
+            Iterations.Text = Convert.ToString(DSO.GetCountOfIterations());
         }
 
         private void FletcherReevesMethod_Click(object sender, EventArgs e)
@@ -39,6 +42,7 @@ namespace MultidimensionalOptimization_
             X1.Text = Convert.ToString(FR.MethodForX1());
             X2.Text = Convert.ToString(FR.MethodForX2());
             F.Text = Convert.ToString(FR.MethodForF());
+            Iterations.Text = Convert.ToString(FR.GetCountOfIterations());
         }
 
         private void ModifiedNewtonsMethod_Click(object sender, EventArgs e)
@@ -47,6 +51,7 @@ namespace MultidimensionalOptimization_
             X1.Text = Convert.ToString(Mode.MethodForX1());
             X2.Text = Convert.ToString(Mode.MethodForX2());
             F.Text = Convert.ToString(Mode.MethodForF());
+            Iterations.Text = Convert.ToString(Mode.GetCountOfIterations());
         }
     }
 }

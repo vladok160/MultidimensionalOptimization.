@@ -22,6 +22,10 @@ namespace MultidimensionalOptimization_
             alpha = getAlpha(x, d);
             Method();
         }
+        public int GetCountOfIterations()
+        {
+            return count;
+        }
         public double MethodForX1()
         {
             return x[0];
@@ -45,6 +49,7 @@ namespace MultidimensionalOptimization_
                 gradF = gradFNew;
                 alpha = getAlpha(x, d);
                 iterations++;
+                count++;
             }
         }
         double[] gradient(double[] x)

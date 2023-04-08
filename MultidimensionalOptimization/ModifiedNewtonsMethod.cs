@@ -13,6 +13,10 @@ namespace MultidimensionalOptimization_
             this.epsilon = epsilon;
             Method();
         }
+        public int GetCountOfIterations()
+        {
+            return count;
+        }
         public double MethodForX1()
         {
             return x[0];
@@ -41,6 +45,7 @@ namespace MultidimensionalOptimization_
                 // обновляем значение x
                 x[0] -= dx[0];
                 x[1] -= dx[1];
+                count++;
             }
         }
         // вычисляет градиент функции в точке x

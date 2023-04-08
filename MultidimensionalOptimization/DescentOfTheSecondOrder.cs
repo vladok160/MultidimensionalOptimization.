@@ -21,6 +21,10 @@ namespace MultidimensionalOptimization_
             d = new double[] { 0, 0 };
             Method();
         }
+        public int GetCountOfIterations()
+        {
+            return count;
+        }
         public double MethodForX1()
         {
             return x_new[0];
@@ -77,6 +81,7 @@ namespace MultidimensionalOptimization_
 
                 // Update the point
                 x = x_new;
+                count++;
             }
         }
         double[,] Inverse(double[,] a) //штука для нахождения обратной матрицы
